@@ -1,0 +1,45 @@
+'use client';
+
+import { ArrowDownIcon } from "lucide-react";
+
+
+
+const Hero = () => {
+  return (
+<section
+  id="home"
+  className="relative px-4 md:px-6 py-40 pb-5 h-[100vh] overflow-hidden border-b-2 border-b-neutral-600"
+>
+  <div className="flex flex-col md:flex-row items-center justify-between h-full w-full">
+    <div className="flex-1 border w-full h-[100vh] flex items-center">
+      <div className="z-10 w-full lg:w-3/4 text-left text-white mx-auto">
+        <h1 className="text-5xl sm:text-6xl font-bold leading-tight mb-6">
+          Next.<br />
+          <span className="text-green-400">Generation.</span><br />
+          <span className="text-cyan-400">Fitness.</span>
+        </h1>
+        <p className="text-gray-300 text-lg mb-10">
+          At Sandow, we’re not just a fitness and nutrition platform; we’re your dedicated partners on your journey to a healthier, happier you.
+        </p>
+        <button
+          onClick={() => window.location.href = "#about"} 
+          className="border border-white text-white hover:bg-white hover:text-black transition-all flex items-center gap-2 px-4 py-2 rounded"
+        >
+         <ArrowDownIcon /> Meet Our Team
+        </button>
+      </div>
+    </div>
+    <div className="flex-1 border w-full h-[100vh] relative">
+      <img
+        src="/heroimg.png"
+        alt="Hero"
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      />
+    </div>
+  </div>
+</section>
+
+  );
+};
+
+export default Hero;
