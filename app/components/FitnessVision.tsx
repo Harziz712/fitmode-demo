@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
-import Image from 'next/image'
 import gsap from 'gsap'
 
 const FitnessVision = () => {
@@ -22,7 +21,7 @@ const FitnessVision = () => {
     >
       {/* Left: Image */}
       <div className="w-full md:w-1/2 relative">
-        <Image
+        <img
           src="/fitnessmodel.png" // 👈 Replace with your actual image
           alt="Fitness Model"
           width={500}

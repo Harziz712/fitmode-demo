@@ -1,5 +1,6 @@
 "use client"
 
+import FitnessVision from "./components/FitnessVision";
 import Hero from "./components/hero";
 import Navbar  from "./components/Navbar";
 
