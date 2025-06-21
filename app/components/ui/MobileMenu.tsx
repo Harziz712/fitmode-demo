@@ -40,7 +40,7 @@ export const MobileMenu = ({ isOpen, onClose }: Props) => {
   return (
     <div
       ref={menuRef}
-      className="fixed top-6 left-1/2 transform -translate-x-1/2 inset-0 w-full h-[400px] rounded-3xl z-[99] text-white/50 bg-black/70 border-2 border-gray-800 backdrop-blur-sm p-6"
+      className="fixed top-6 left-1/2 transform -translate-x-1/2 inset-0 w-full h-[480px] rounded-3xl z-[99] text-white/50 bg-black/70 border-2 border-gray-800 backdrop-blur-sm p-6"
     >
       <div className="flex justify-between items-start mb-10">
         <span className=" font-bold text-xl">ZeezFitHub</span>
@@ -56,12 +56,15 @@ export const MobileMenu = ({ isOpen, onClose }: Props) => {
         <NavLink href="#contact">Faq</NavLink>
         <NavLink href="#contact">Pricing</NavLink>
 
-        <button className="mt-10 w-full rounded-full border border-white  py-2 flex items-center justify-center gap-2 hover:bg-white hover:text-black transition">
-          About us
-        </button>
-        <button className="mt-10 w-full rounded-full border border-white  py-2 flex items-center justify-center gap-2 hover:bg-white hover:text-black transition">
-          Sign up
-        </button>
+
+        <div className="grid  gap-4">
+            <button className="rounded-full bg-transparent shadow-xs  border-gray-100/20 font-semibold backdrop-blur-md py-2 px-6 flex items-center justify-center gap-2 hover:bg-white hover:text-black transition">
+            About us
+            </button>
+          <button className="rounded-full text-black/80 font-semibold bg-white  py-2 px-6 flex items-center justify-center gap-2 hover:bg-black/50 hover:text-white transition">
+            Sign up
+          </button>
+        </div>
       </nav>
     </div>
   );
