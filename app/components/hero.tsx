@@ -8,18 +8,20 @@ const Hero = () => {
   return (
 <section
   id="home"
-  className="relative px-4 md:px-6 py-48 pb-5 h-[100vh] overflow-hidden border-b-2 border-b-neutral-600 bg-[url(/herobg.png)] bg-cover bg-center bg-no-repeat bg-fixed"
+  className="relative px-4 md:px-6 sm:py-48 md:pt-72 pb-5 h-[100vh] overflow-hidden border-b-2 border-b-neutral-600 bg-[url(/herobg.png)] bg-cover bg-center bg-no-repeat bg-fixed"
   // style={{ backgroundImage: "url(/heroimg.png)" }}
 >
-  <div className="flex flex-col md:flex-row items-center justify-between h-full w-full">
+      <div className="absolute inset-0 bg-black/20 z-10" />
+
+  <div className="flex flex-col md:flex-row items-center  justify-between h-full w-full">
     <div className="flex-1 w-full h-[100vh] flex items-center">
       <div className="z-10 w-full lg:w-3/4 text-left text-white mx-auto">
-        <h1 className="text-5xl sm:text-6xl font-bold leading-tight mb-6">
+        <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
           Next.<br />
           <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Generation.</span><br />
           <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Fitness.</span>
         </h1>
-        <p className="text-gray-300 text-lg mb-10">
+        <p className="text-gray-300 text-lg md:text-xl mb-10">
           At Sandow, we’re not just a fitness and nutrition platform; we’re your dedicated partners on your journey to a healthier, happier you.
         </p>
         <button

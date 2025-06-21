@@ -10,7 +10,7 @@ export default function Home() {
    <Navbar/>
      <main className="relative">
         <Hero />
-       
+       <FitnessVision/>
         {/* Other sections go here */}
       </main>
     </>

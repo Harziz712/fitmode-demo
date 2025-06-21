@@ -42,6 +42,7 @@ export const MobileMenu = ({ isOpen, onClose }: Props) => {
       ref={menuRef}
       className="fixed top-6 left-1/2 transform -translate-x-1/2 inset-0 w-full h-[480px] rounded-3xl z-[99] text-white/50 bg-black/70 border-2 border-gray-800 backdrop-blur-sm p-6"
     >
+      
       <div className="flex justify-between items-start mb-10">
         <span className=" font-bold text-xl">ZeezFitHub</span>
         <button onClick={onClose}>
