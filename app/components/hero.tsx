@@ -8,8 +8,7 @@ const Hero = () => {
   return (
 <section
   id="home"
-  className="relative px-4 md:px-6 sm:py-48 md:pt-72 pb-5 h-[100vh] overflow-hidden border-b-2 border-b-neutral-600 bg-[url(/herobg.png)] bg-cover bg-center bg-no-repeat bg-fixed"
-  // style={{ backgroundImage: "url(/heroimg.png)" }}
+  className="relative px-4 md:py-48 pt-48  md:pt-72 pb-5 h-[100vh] overflow-hidden border-b-2 border-b-neutral-600 bg-[url(/herobg.png)] bg-cover bg-center bg-no-repeat bg-fixed"
 >
       <div className="absolute inset-0 bg-black/20 z-10" />
 
