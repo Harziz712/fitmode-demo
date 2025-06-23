@@ -5,6 +5,7 @@ import FitnessVision from "./components/FitnessVision";
 import Hero from "./components/hero";
 import Navbar  from "./components/Navbar";
 import OurStory from "./components/OurStory";
+import OurTeam from "./components/OurTeam";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
        <FitnessVision/>
        <CoreValues/>
        <OurStory/>
+       <OurTeam/>
         {/* Other sections go here */}
       </main>
     </>
