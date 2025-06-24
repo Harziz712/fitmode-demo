@@ -1,5 +1,6 @@
 "use client"
 
+import Contact from "./components/Contact";
 import CoreValues from "./components/CoreValues";
 import FitnessVision from "./components/FitnessVision";
 import Hero from "./components/hero";
@@ -18,6 +19,7 @@ export default function Home() {
        <CoreValues/>
        <OurStory/>
        <OurTeam/>
+       <Contact/>
         {/* Other sections go here */}
       </main>
     </>
