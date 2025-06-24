@@ -1,0 +1,48 @@
+'use client'
+
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { LuggageIcon } from 'lucide-react'
+
+const Contact = () => {
+  const containerRef = useRef(null)
+
+  useEffect(() => {
+    gsap.fromTo(
+      containerRef.current,
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+    )
+  }, [])
+
+  return (
+    <div
+      ref={containerRef}
+      className='p-10 '
+
+    >
+        <div className="w-full rounded-2xl bg-gradient-to-r h-3/4 from-teal-400 via-teal-400 to-green-400 p-0 ">
+
+        <div className="w-full rounded-2xl bg-gradient-to-r h-[500px] from-teal-400 via-teal-400 to-green-400 p-8 flex flex-col md:flex-row items-center justify-between gap-6 text-white shadow-lg bg-[url(/barbell.png)] bg-cover bg-center bg-no-repeat">
+      <div className="flex flex-col md:gap-10 max-w-md  md:pl-10">
+        <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+          Let's Join Our Team!
+        </h2>
+        <p className="flex items-center  gap-2 text-white/90 font-medium md:text-xl">
+          <LuggageIcon/> <span>87 Openings Available.</span>
+        </p>
+        <button className="mt-2 px-6 py-3 bg-white text-black font-semibold rounded-full w-fit hover:bg-gray-200 transition">
+          See Job Openings →
+        </button>
+      </div>
+
+      <div className="w-full md:w-auto flex-shrink-0">
+
+      </div>
+    </div>
+    </div>
+    </div>
+  )
+}
+
+export default Contact
