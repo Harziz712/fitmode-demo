@@ -25,23 +25,27 @@ const OurTeam = () => {
 
       {/* Filters */}
     <div className="flex flex-wrap gap-4 mb-6 items-center justify-center px-4 mt-10 w-full">
-      <input
-        type="text"
-        placeholder="Search by name..."
-        className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white w-full sm:w-1/3"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      <div className="relative w-full sm:w-1/3 rounded-full p-[2px] bg-gradient-to-r from-teal-500 via-blue-500 to-green-500">
+        <input
+          type="text"
+          placeholder="Search by name..."
+          className="px-4 py-2 rounded-full bg-neutral-800 border-none text-white w-full outline-none"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
 
-      <select
-        className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white"
-        value={role}
-        onChange={(e) => setRole(e.target.value)}
-      >
-        {roles.map((r) => (
-        <option key={r} value={r}>{r}</option>
-        ))}
-      </select>
+      <div className="relative rounded-md p-[2px] bg-gradient-to-r from-teal-500 via-blue-500 to-green-500">
+        <select
+          className="px-4 py-2 rounded-md bg-neutral-800 border-none text-white outline-none"
+          value={role}
+          onChange={(e) => setRole(e.target.value)}
+        >
+          {roles.map((r) => (
+            <option key={r} value={r}>{r}</option>
+          ))}
+        </select>
+      </div>
     </div>
 
       {/* Cards */}

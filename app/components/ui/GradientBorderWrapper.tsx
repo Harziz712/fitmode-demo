@@ -5,15 +5,16 @@ type Props = {
   children: React.ReactNode;
   rounded?: string; // e.g., "rounded-xl", "rounded-2xl"
   className?: string;
+    onClick: () => void;
 };
 
-const GradientBorderWrapper: React.FC<Props> = ({
-  children,
-  rounded = 'rounded-xl',
-  className = '',
-}) => {
+const GradientBorderWrapper = React.forwardRef<HTMLDivElement, Props>(
+  ({ children, onClick, className, rounded }, ref) => {
+
   return (
-    <div
+     <div
+    ref={ref}
+    onClick={onClick}
       className={`relative overflow-hidden  group cursor-pointer border border-neutral-700 bg-gradient-to-br from-neutral-800 to-neutral-900 shadow-md transition-all duration-300 ${rounded} ${className}`}
       style={{
         boxShadow: '0 0 0 2px transparent',
@@ -35,6 +36,5 @@ const GradientBorderWrapper: React.FC<Props> = ({
      {children}
     </div>
   );
-};
-
+})
 export default GradientBorderWrapper;

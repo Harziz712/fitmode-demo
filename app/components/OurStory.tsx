@@ -70,7 +70,7 @@ const OurStory = () => {
         {ourStoryData.map((item) => (
           <div
             key={item.year}
-            className="year-section w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/herobg.png)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
+            className="year-section w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/gymhouse.jpg)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
           >
             <h1 className="text-8xl font-digital mb-4">{item.year}</h1>
 

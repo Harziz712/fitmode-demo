@@ -39,13 +39,18 @@ export const TeamMemberCard = ({ member, onClick }: Props) => {
   }, []);
 
   return (
- <GradientBorderWrapper className="h-[500px] w-[350px]" rounded="rounded-xl">
+    <GradientBorderWrapper
+      ref={cardRef}
+      onClick={onClick}
+      className="h-[500px] w-[350px] "
+      rounded="rounded-xl"
+    >
 
       {/* Image */}
       <img
         src={member.image}
         alt={member.name}
-        className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition"
+        className="w-full h-full object-cover opacity-40 grayscale-100 group-hover:opacity-100 transition"
       />
 
       {/* Name and Role */}
