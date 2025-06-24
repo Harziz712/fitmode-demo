@@ -55,3 +55,42 @@ export const ourStoryData = [
     description: "We evolved into a complete lifestyle brand—integrating fashion, mindset, and movement for the next generation of health enthusiasts."
   }
 ];
+
+// data/teamMembers.ts
+export const teamMembers = [
+  {
+    id: 1,
+    name: 'Azunyan U. Wu',
+    role: 'CEO, Co-Founder',
+    bio: 'Azunyan leads the company with a vision for tech-forward fitness solutions.',
+    image: '/team/azunyan.jpg',
+    socials: {
+      twitter: '#',
+      linkedin: '#',
+      facebook: '#',
+    },
+  },
+  {
+    id: 2,
+    name: 'Bocchi D. Rock',
+    role: 'Chief Scientific Officer',
+    bio: 'Bocchi oversees scientific research and innovation.',
+    image: '/team/bocchi.jpg',
+    socials: {
+      twitter: '#',
+      linkedin: '#',
+    },
+  },
+  {
+    id: 3,
+    name: 'Jared M. Leto',
+    role: 'Senior Product Designer',
+    bio: 'Jared ensures visual and UX excellence in all products.',
+    image: '/team/jared.jpg',
+    socials: {
+      twitter: '#',
+      linkedin: '#',
+      github: '#',
+    },
+  },
+];
