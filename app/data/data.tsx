@@ -63,7 +63,7 @@ export const teamMembers = [
     name: 'Azunyan U. Wu',
     role: 'CEO, Co-Founder',
     bio: 'Azunyan leads the company with a vision for tech-forward fitness solutions.',
-    image: '/team/azunyan.jpg',
+    image: '/fitnessmodel.png',
     socials: {
       twitter: '#',
       linkedin: '#',
@@ -75,7 +75,7 @@ export const teamMembers = [
     name: 'Bocchi D. Rock',
     role: 'Chief Scientific Officer',
     bio: 'Bocchi oversees scientific research and innovation.',
-    image: '/team/bocchi.jpg',
+    image: '/fitnessmodel.png',
     socials: {
       twitter: '#',
       linkedin: '#',
@@ -86,7 +86,7 @@ export const teamMembers = [
     name: 'Jared M. Leto',
     role: 'Senior Product Designer',
     bio: 'Jared ensures visual and UX excellence in all products.',
-    image: '/team/jared.jpg',
+    image: '/fitnessmodel.png',
     socials: {
       twitter: '#',
       linkedin: '#',

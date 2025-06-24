@@ -21,31 +21,31 @@ const OurTeam = () => {
 
   return (
     <section className="min-h-screen px-4 py-20 bg-black text-white">
-      <h1 className="text-3xl font-bold mb-6">Meet Our Team</h1>
+    <h1 className="text-3xl font-bold mb-6 text-center w-full ">Meet Our Team</h1>
 
       {/* Filters */}
-      <div className="flex flex-wrap gap-4 mb-6 items-center justify-between">
-        <input
-          type="text"
-          placeholder="Search by name..."
-          className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white w-full sm:w-1/3"
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
+    <div className="flex flex-wrap gap-4 mb-6 items-center justify-center px-4 mt-10 w-full">
+      <input
+        type="text"
+        placeholder="Search by name..."
+        className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white w-full sm:w-1/3"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
 
-        <select
-          className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white"
-          value={role}
-          onChange={(e) => setRole(e.target.value)}
-        >
-          {roles.map((r) => (
-            <option key={r} value={r}>{r}</option>
-          ))}
-        </select>
-      </div>
+      <select
+        className="px-4 py-2 rounded-md bg-neutral-800 border border-neutral-600 text-white"
+        value={role}
+        onChange={(e) => setRole(e.target.value)}
+      >
+        {roles.map((r) => (
+        <option key={r} value={r}>{r}</option>
+        ))}
+      </select>
+    </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  py-5 px-4 max-w-6xl mx-auto items-center justify-center">
         {filtered.map((member) => (
           <TeamMemberCard
             key={member.id}
