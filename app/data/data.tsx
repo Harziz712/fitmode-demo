@@ -58,39 +58,98 @@ export const ourStoryData = [
 
 // data/teamMembers.ts
 export const teamMembers = [
-  {
-    id: 1,
-    name: 'Azunyan U. Wu',
-    role: 'CEO, Co-Founder',
-    bio: 'Azunyan leads the company with a vision for tech-forward fitness solutions.',
-    image: '/user3.jpg',
-    socials: {
-      twitter: '#',
-      linkedin: '#',
-      facebook: '#',
+    {
+        id: 1,
+        name: 'Azunyan U. Wu',
+        role: 'CEO, Co-Founder',
+        bio: 'Azunyan leads the company with a vision for tech-forward fitness solutions.',
+        image: '/user3.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            facebook: '#',
+        },
     },
-  },
-  {
-    id: 2,
-    name: 'Bocchi D. Rock',
-    role: 'Chief Scientific Officer',
-    bio: 'Bocchi oversees scientific research and innovation.',
-    image: '/user2.jpg',
-    socials: {
-      twitter: '#',
-      linkedin: '#',
+    {
+        id: 2,
+        name: 'Bocchi D. Rock',
+        role: 'Chief Scientific Officer',
+        bio: 'Bocchi oversees scientific research and innovation.',
+        image: '/user2.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+        },
     },
-  },
-  {
-    id: 3,
-    name: 'Jared M. Leto',
-    role: 'Senior Product Designer',
-    bio: 'Jared ensures visual and UX excellence in all products.',
-    image: '/user1.jpg',
-    socials: {
-      twitter: '#',
-      linkedin: '#',
-      github: '#',
+    {
+        id: 3,
+        name: 'Jared M. Leto',
+        role: 'Senior Product Designer',
+        bio: 'Jared ensures visual and UX excellence in all products.',
+        image: '/user1.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            github: '#',
+        },
     },
-  },
+    {
+        id: 4,
+        name: 'Mina S. Lee',
+        role: 'Lead Software Engineer',
+        bio: 'Mina architects scalable systems and leads the engineering team.',
+        image: '/user1.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            github: '#',
+        },
+    },
+    {
+        id: 5,
+        name: 'Carlos T. Rivera',
+        role: 'Head of Marketing',
+        bio: 'Carlos drives brand growth and community engagement.',
+        image: '/user1.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            instagram: '#',
+        },
+    },
+    {
+        id: 6,
+        name: 'Priya K. Sharma',
+        role: 'Nutrition Specialist',
+        bio: 'Priya develops nutrition programs and educational content.',
+        image: '/user1.jpg',
+        socials: {
+            linkedin: '#',
+            facebook: '#',
+        },
+    },
+    {
+        id: 7,
+        name: 'Liam O. Murphy',
+        role: 'Mobile App Lead',
+        bio: 'Liam manages mobile development and user experience.',
+        image: '/user1.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            github: '#',
+        },
+    },
+    {
+        id: 8,
+        name: 'Sofia G. Rossi',
+        role: 'Community Manager',
+        bio: 'Sofia fosters a positive and active user community.',
+        image: '/user1.jpg',
+        socials: {
+            twitter: '#',
+            linkedin: '#',
+            instagram: '#',
+        },
+    },
 ];
