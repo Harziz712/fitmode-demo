@@ -3,6 +3,7 @@
 import Contact from "./components/Contact";
 import CoreValues from "./components/CoreValues";
 import FitnessVision from "./components/FitnessVision";
+import Footer from "./components/Footer";
 import Hero from "./components/hero";
 import Navbar  from "./components/Navbar";
 import OurStory from "./components/OurStory";
@@ -20,6 +21,7 @@ export default function Home() {
        <OurStory/>
        <OurTeam/>
        <Contact/>
+       <Footer/>
         {/* Other sections go here */}
       </main>
     </>
