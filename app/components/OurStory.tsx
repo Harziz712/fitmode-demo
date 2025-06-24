@@ -65,12 +65,12 @@ const OurStory = () => {
       {/* Horizontal Scroll Section */}
       <div
         ref={containerRef}
-        className="flex w-[1100vw] h-[80vh] items-center px-10 space-x-16"
+        className="flex w-[1100vw] h-[80vh] items-center px-10 space-x-5 md:space-x-16"
       >
         {ourStoryData.map((item) => (
           <div
             key={item.year}
-            className="year-section w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/gymhouse.jpg)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
+            className="year-section w-full  md:w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/gymhouse.jpg)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
           >
             <h1 className="text-8xl font-digital mb-4">{item.year}</h1>
 

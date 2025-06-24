@@ -24,7 +24,7 @@ const OurTeam = () => {
     <h1 className="text-3xl font-bold mb-6 text-center w-full ">Meet Our Team</h1>
 
       {/* Filters */}
-    <div className="flex flex-wrap gap-4 mb-6 items-center justify-center px-4 mt-10 w-full">
+    <div className="flex  flex-wrap gap-4 mb-6 items-center justify-center px-4 mt-10 w-full">
       <div className="relative w-full sm:w-1/3 rounded-full p-[2px] bg-gradient-to-r from-teal-500 via-blue-500 to-green-500">
         <input
           type="text"
@@ -49,20 +49,20 @@ const OurTeam = () => {
     </div>
 
       {/* Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  py-5 px-4 max-w-6xl mx-auto items-center justify-center">
+    <div className="grid grid-cols-1 gap-10 md:gap-0 sm:grid-cols-1 md:grid-cols-3 py-5 px-4 max-w-6xl mx-auto items-center justify-center place-items-center">
         {filtered.map((member) => (
-          <TeamMemberCard
-            key={member.id}
-            member={{
-              ...member,
-              socials: Object.fromEntries(
-                Object.entries(member.socials).map(([k, v]) => [k, v ?? ""])
-              ),
-            }}
-            onClick={() => setSelected(member)}
-          />
+            <TeamMemberCard
+                key={member.id}
+                member={{
+                    ...member,
+                    socials: Object.fromEntries(
+                        Object.entries(member.socials).map(([k, v]) => [k, v ?? ""])
+                    ),
+                }}
+                onClick={() => setSelected(member)}
+            />
         ))}
-      </div>
+    </div>
 
       {/* Modal */}
       <TeamModal member={selected} isOpen={!!selected} onClose={() => setSelected(null)} />
