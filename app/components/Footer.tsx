@@ -53,13 +53,13 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div>
-        <div className="text-center grid grid-col-2 mb-16">
-         <div>
+        <div className="text-center grid w-full md:grid-cols-2 grid-cols-1   mb-16">
+         <div className=' text-start'>
            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             ZeezFitHub
           </h1>
     
-          <div className="flex justify-center gap-4 mt-8">
+          <div className="flex justify-start gap-4 mt-8">
             {[
               { Icon: FacebookIcon, href: 'https://facebook.com', label: 'Facebook' },
               { Icon: InstagramIcon, href: 'https://instagram.com', label: 'Instagram' },
@@ -86,8 +86,8 @@ const Footer = () => {
          </div>
 
         {/* Newsletter Subscription */}
-        <div className="mb-16 flex flex-col items-center">
-          <h3 className="text-white font-medium mb-4">Subscribe to newsletter</h3>
+        <div className="mb-16 flex flex-col items-end">
+          <h3 className="text-white  text-md font-medium mb-4">Subscribe to Newsletter</h3>
           <div className="relative w-full max-w-md">
             <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
