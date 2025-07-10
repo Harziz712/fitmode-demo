@@ -42,7 +42,7 @@ export const TeamMemberCard = ({ member, onClick }: Props) => {
     <GradientBorderWrapper
       ref={cardRef}
       onClick={onClick}
-      className="w-[350px] h-[420px] sm:h-[420px] sm:w-[280px] relative group"
+      className="w-[250px] h-[420px] md:h-[420px] md:w-full relative group"
       rounded="rounded-xl"
     >
       {/* Image */}
