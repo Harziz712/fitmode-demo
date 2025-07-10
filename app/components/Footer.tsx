@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { Mail, ArrowRight, FacebookIcon, InstagramIcon, YoutubeIcon } from 'lucide-react';
+import FooterStylishLink from './ui/FooterStylishLink';
 
 
 const Footer = () => {
@@ -52,8 +53,9 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div>
-        <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+        <div className="text-center grid grid-col-2 mb-16">
+         <div>
+           <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
             ZeezFitHub
           </h1>
     
@@ -81,7 +83,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-        </div>
+         </div>
 
         {/* Newsletter Subscription */}
         <div className="mb-16 flex flex-col items-center">
@@ -105,9 +107,11 @@ const Footer = () => {
             </button>
           </div>
         </div>
+        
+        </div>
 </div>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-12">
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent capitalize text-gray-300 max-w-2xl mx-auto font-bold leading-relaxed">
             ZeezFitHub provides personalized fitness & diet solutions<br />
             through the power of AI.
           </p>
@@ -118,20 +122,7 @@ const Footer = () => {
             </h3>
             <nav className="space-y-4">
               {['Home', 'Platform', 'Services'].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-300 hover:text-emerald-500 transition-colors duration-300 relative group"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.paddingLeft = '8px';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.paddingLeft = '0px';
-                  }}
-                >
-                  {item}
-                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-2 transition-all duration-300"></span>
-                </a>
+              <FooterStylishLink key={item} item={item}/>
               ))}
             </nav>
           </div>
@@ -143,20 +134,8 @@ const Footer = () => {
             </h3>
             <nav className="space-y-4">
               {['Fitness Analytics', 'Activity Tracker', 'Virtual AI Coach'].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-300 hover:text-emerald-500 transition-colors duration-300 relative group"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.paddingLeft = '8px';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.paddingLeft = '0px';
-                  }}
-                >
-                  {item}
-                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-2 transition-all duration-300"></span>
-                </a>
+             <FooterStylishLink key={item} item={item}/>
+
               ))}
             </nav>
           </div>
@@ -168,20 +147,8 @@ const Footer = () => {
             </h3>
             <nav className="space-y-4">
               {['Privacy Policy', 'Terms & Conditions', 'Cookie Policy'].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="block text-gray-300 hover:text-emerald-500 transition-colors duration-300 relative group"
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.paddingLeft = '8px';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.paddingLeft = '0px';
-                  }}
-                >
-                  {item}
-                  <span className="absolute left-0 top-1/2 transform -translate-y-1/2 w-0 h-0.5 bg-emerald-500 group-hover:w-2 transition-all duration-300"></span>
-                </a>
+                <FooterStylishLink key={item} item={item}/>
+
               ))}
             </nav>
           </div>
@@ -189,9 +156,12 @@ const Footer = () => {
 
         {/* Bottom Border */}
         <div className="border-t border-gray-800 pt-8 mt-16">
-          <div className="text-center text-gray-400 text-sm">
-            © 2025 ZenFitHub. All rights reserved.
+          <div className="text-center text-gray-400 text-sm flex flex-col sm:flex-row sm:flex-wrap gap-2 mt-4 justify-center text-xs">
+             <p>© 2025 ZeezFitHub. All rights reserved.</p>
+            <p>Made with 💻 by Harziiz</p>
+            <p>Built with Passion ❤️</p>
           </div>
+
         </div>
       </div>
     </footer>
