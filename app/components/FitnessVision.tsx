@@ -18,11 +18,11 @@ const FitnessVision = () => {
   return (
     <section
       ref={containerRef}
-      className="flex flex-col items-center justify-between gap-10 bg-black text-white p-4 md:p-8 rounded-xl max-w-full md:max-w-7xl mx-auto"
+      className="flex flex-col items-center justify-between gap-10 bg-black text-white p-4 md:p-8 max-w-full md:max-w-7xl mx-auto"
     >
       <div className="flex justify-center items-center w-full">
         <div className="w-full grid grid-cols-1 lg:grid-cols-7 gap-6 md:gap-8">
-          <div className="relative p-2 md:p-4 rounded-2xl flex flex-col space-y-6 px-10 md:px-0 md:col-span-3">
+          <div className="relative p-2 md:p-4 rounded-2xl flex flex-col space-y-6 md:px-10 md:px-0 md:col-span-3">
             <div className="relative">
               <img
                 src="/fitnessmodel.png"

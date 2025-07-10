@@ -65,26 +65,28 @@ const OurStory = () => {
       {/* Horizontal Scroll Section */}
       <div
         ref={containerRef}
-        className="flex w-[1100vw] h-[80vh] items-center px-10 space-x-5 md:space-x-16"
+        className="flex w-[1200vw] h-[80vh] items-center px-10 space-x-5 md:space-x-16"
       >
         {ourStoryData.map((item) => (
           <div
-            key={item.year}
-            className="year-section w-full  md:w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/gymhouse.jpg)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
+        key={item.year}
+        className="year-section w-full md:w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-start text-left relative bg-[url(/gymhouse.jpg)] bg-cover bg-center bg-no-repeat shadow-lg shadow-neutral-500/20 border border-gray-100/20"
           >
-            <h1 className="text-8xl font-digital mb-4">{item.year}</h1>
+        <h1 className="text-8xl font-digital mb-4">{item.year}</h1>
 
-            {/* Individual scroll-bound progress bar */}
-            <div className="w-full h-2 bg-neutral-800 rounded-full overflow-hidden mb-6">
-              <div
-                className="section-progress h-full w-0 rounded-full bg-gradient-to-r from-green-400 to-cyan-400"
-              />
-            </div>
+        {/* Individual scroll-bound progress bar */}
+        <div className="w-full h-2 bg-neutral-800 rounded-full overflow-hidden mb-6">
+          <div
+            className="section-progress h-full w-0 rounded-full bg-gradient-to-r from-green-400 to-cyan-400"
+          />
+        </div>
 
-            <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-            <p className="text-gray-300 max-w-xl">{item.description}</p>
+        <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+        <p className="text-gray-300 max-w-xl">{item.description}</p>
           </div>
         ))}
+        {/* Add a trailing empty section to allow scrolling past the last item */}
+        <div className="year-section w-full md:w-[70vw] h-[500px] px-10 rounded-[50px] flex flex-col justify-center items-center text-center relative bg-transparent" />
       </div>
     </section>
   );

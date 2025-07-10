@@ -66,7 +66,7 @@ const OurTeam = () => {
             </div>
 
             {/* Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-5 px-4 max-w-6xl justify-center mx-auto">
+            <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 md:gap-10 py-5 px-2 sm:px-4 max-w-6xl justify-center mx-auto w-full">
                 {filtered.slice(0, visibleCount).map((member) => (
                     <TeamMemberCard
                         key={member.id}
