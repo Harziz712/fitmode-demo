@@ -21,7 +21,7 @@ const Hero = () => {
           <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Fitness.</span>
         </h1>
         <p className="text-gray-300 text-lg md:text-xl mb-10">
-          At Sandow, we’re not just a fitness and nutrition platform; we’re your dedicated partners on your journey to a healthier, happier you.
+          At ZeezFitHub, we’re not just a fitness and nutrition platform; we’re your dedicated partners on your journey to a healthier, happier you.
         </p>
         <button
           onClick={() => window.location.href = "#about"} 
