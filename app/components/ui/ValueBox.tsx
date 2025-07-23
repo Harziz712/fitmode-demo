@@ -1,5 +1,6 @@
 import { ArrowUpLeft } from 'lucide-react';
 import React from 'react'
+import GradientText from './GradientText';
 
 type ValueBoxProps = {
   className?: string;
@@ -27,7 +28,14 @@ const ValueBox: React.FC<ValueBoxProps> = ({ className , id , title, description
       <h3 className='absolute top-5 left-5 text-md md:text-2xl'>{id}</h3>
 
       <div className='absolute w-1/2  bottom-0 left-5 text-md px-5 grid grid-cols-1 py-10 md:grid-cols-3 gap-6 text-left'>
-        <p className='bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent font-bold col-span-1 text-xl'>{title} </p>
+            <GradientText
+                   colors={["#22c55e", "#06b6d4", "#22c55e", "#06b6d4", "#22c55e"]}
+                   animationSpeed={3}
+                   showBorder={false}
+                   className="custom-class"
+                 >
+                 {title}
+                 </GradientText>
         <p className='text-gray-300 col-span-2'>{description}</p>
       </div>
       <a

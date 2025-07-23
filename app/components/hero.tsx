@@ -1,7 +1,25 @@
 'use client';
-
+import  gsap  from "gsap";
 import { ArrowDownIcon } from "lucide-react";
+import GradientText from "./ui/GradientText";
+import TextPressure from "./ui/TextPressure";
 
+
+
+
+const GsapText = () => {
+      gsap.fromTo(".heroText",{
+        opacity: 0,
+        y:20,
+      }, {
+        opacity: 1,
+        y:0,
+        delay:1,
+        stagger: 0.2
+        })
+        
+    
+    }
 
 
 const Hero = () => {
@@ -15,12 +33,33 @@ const Hero = () => {
   <div className="flex flex-col md:flex-row items-center  justify-between h-full w-full">
     <div className="flex-1 w-full h-[100vh] flex items-center">
       <div className="z-10 w-full lg:w-3/4 text-left text-white mx-auto">
-        <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
-          Next.<br />
-          <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Generation.</span><br />
-          <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Fitness.</span>
+        <h1 className=" heroText  font-bold leading-tight mb-6 ">
+            <TextPressure
+              text="Next."
+              flex={true}
+              alpha={false}
+              stroke={false}
+              width={true}
+              weight={true}
+              italic={true}
+              textColor="#ffffff"
+              strokeColor="#ff0000"
+              minFontSize={10}
+            />
+            <br />
+          <GradientText
+            colors={["#22c55e", "#06b6d4", "#22c55e", "#06b6d4", "#22c55e"]}
+            animationSpeed={3}
+            showBorder={false}
+            className="custom-class text-6xl md:text-7xl"
+          >
+            Generation
+            Fitness
+          </GradientText>
+          {/* <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Generation.</span><br />
+          <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent">Fitness.</span> */}
         </h1>
-        <p className="text-gray-300 text-lg md:text-xl mb-10">
+        <p className="text-gray-300 text-lg md:text-lg mb-10">
           At ZeezFitHub, we’re not just a fitness and nutrition platform; we’re your dedicated partners on your journey to a healthier, happier you.
         </p>
         <button
